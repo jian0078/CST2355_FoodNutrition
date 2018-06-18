@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- activity_dash_board_of_tracking.xml -->
+    <string name="title_activity_dash_board_of_tracking">减肥神器</string>
+    <string name="projectNameInActivityTracking">四人帮集团</string>
+
+    <!-- fragment_view_tracking.xml -->
+    <string name="textView_dateAndTime">日期</string>
+    <string name="textView_activityType">活动类型</string>
+    <string name="textView_durationInMinutes">持续时间</string>
+    <string name="button_orderByDate">按日期排序</string>
+    <string name="button_summary">天汇总</string>
+
+
+    <!-- fragment_add_activity_tracking.xml -->
+    <string name="textView_date">日期: </string>
+    <string name="textView_datePicker">更改日期？</string>
+    <string name="textView_selectOneActivity">选择一个活动: </string>
+    <string name="textView_amountOfTime">持续时间: </string>
+    <string name="textView_comment">评论:</string>
+    <string name="button_add">添加</string>
+    <string name="button_update">更新</string>
+    <string name="button_delete">删除</string>
+    <string name="hint_minutes">分钟</string>
+    <string name="Running">跑步</string>
+    <string name="Walking">散步</string>
+    <string name="Biking">骑行</string>
+    <string name="Swimming">游泳</string>
+    <string name="Skating">滑冰</string>
+    <string name="deleteTrackingConfirm">确认删除该记录？</string>
+    <string name="deleteTrackingConfirmYes">是</string>
+    <string name="deleteTrackingConfirmNo">否</string>
+    <string name="deleteTrackingConfirmYesAlert">记录删除成功！</string>
+    <string name="deleteTrackingConfirmNoAlert">删除失败！</string>
+    <string name="updateTrackingSucc">更新成功！</string>
+    <string name="updateTrackingFail">更新失败！</string>
+    <string name="addTrackingSucc">添加成功！</string>
+    <string name="addTrackingFail">添加失败！</string>
+
+    <!-- fragment_calculate_activity_tracking.xml -->
+    <string name="textView_title">计算月度活动的时间(单位：分钟)</string>
+    <string name="textView_month">月均时间:  </string>
+    <string name="textView_lastmonth">上月 (</string>
+
+    <!-- activity tracking help menu dialog -->
+    <string name="activityTrackingHelpMenu">
+        作者：蔡华明\n\n版本号：1.0.0\n\n本界面是一个运动健身神器。在底部工具栏，有四个按钮操作该神器。从左到右，
+        第一个按钮可以添加一条健身记录。第二个按钮用来列出所有健身记录。用户可以选择其中一条进行编辑或删除，
+        也可以通过按日期排序按钮对记录按日期进行排序，以及通过日汇总按钮对每日的健身活动进行汇总。
+        第三个按钮用来计算用户上月的健身时间，以及平均每个月健身时间。第四个按钮用来显示本条帮助信息。\n\n顶部工具栏的三个按钮，
+        可以引导用户到其它三个功能。
+    </string>
+    <string name="activityTrackingHelpMenuClose">关闭</string>>
+
+
+</resources>

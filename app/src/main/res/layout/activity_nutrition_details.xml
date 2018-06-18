@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NutritionDetails">
+
+    <TextView
+        android:id="@+id/foodItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/enterFoodItem"
+        android:layout_alignBottom="@+id/enterFoodItem"
+        android:layout_alignParentStart="true"
+        android:text="@string/food_item" />
+
+    <EditText
+        android:id="@+id/enterFoodItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/foodItem"
+        android:hint="Enter Food Item"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/eatDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/enterFoodItem"
+        android:layout_marginTop="15dp"
+        android:text="@string/eat_day" />
+
+    <Spinner
+        android:id="@+id/selectDay"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/eatDay"
+        android:layout_alignBottom="@+id/eatDay"
+        android:layout_toRightOf="@+id/eatDay"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/selectTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/selectDay"
+        android:layout_marginTop="24dp"
+        android:text="@string/eat_time" />
+
+    <EditText
+        android:id="@+id/enterTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/selectTime"
+        android:layout_alignBottom="@+id/selectTime"
+        android:layout_alignStart="@+id/enterTotalFat"
+        android:hint="Select Time"
+        android:inputType="time" />
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/selectTime"
+        android:layout_marginTop="53dp"
+        android:text="@string/calories" />
+
+    <EditText
+        android:id="@+id/enterCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/calories"
+        android:layout_alignBottom="@+id/calories"
+        android:layout_toEndOf="@+id/calories"
+        android:hint="Enter Calories"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/totalFat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/enterCalories"
+        android:layout_marginTop="30dp"
+        android:text="@string/total_fat" />
+
+    <EditText
+        android:id="@+id/enterTotalFat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalFat"
+        android:layout_alignBottom="@+id/totalFat"
+        android:layout_toRightOf="@id/totalFat"
+        android:hint="Enter Total Fat"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/totalCarbohydrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/enterTotalFat"
+        android:layout_marginTop="34dp"
+        android:text="@string/total_carbohydrate" />
+
+    <EditText
+        android:id="@+id/enterTotalCarbohydrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/totalCarbohydrate"
+        android:layout_alignBottom="@+id/totalCarbohydrate"
+        android:layout_toEndOf="@+id/totalCarbohydrate"
+        android:hint="Enter Total Carbohydrate"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/save_info" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/saveButton"
+        android:text="@string/delete_info" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/deleteButton"
+        android:text="@string/cancel"/>
+
+</RelativeLayout>
