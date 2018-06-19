@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
         <activity android:name=".FoodInformation" />
         <activity android:name=".FoodList" />
         <activity android:name=".NutritionOnPhone" />
@@ -20,7 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".DashBoardOfActivityTracking" />
+        <activity android:name=".ThermostatActivity" />
+        <activity android:name=".AutomobileActivity"></activity>
     </application>
 
 </manifest>

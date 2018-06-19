@@ -22,52 +22,33 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@id/foodItem"
-        android:hint="Enter Food Item"
+        android:hint="@string/hint_food"
         android:inputType="text" />
 
     <TextView
-        android:id="@+id/eatDay"
+        android:id="@+id/eatTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/enterFoodItem"
-        android:layout_marginTop="15dp"
-        android:text="@string/eat_day" />
-
-    <Spinner
-        android:id="@+id/selectDay"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_alignBaseline="@+id/eatDay"
-        android:layout_alignBottom="@+id/eatDay"
-        android:layout_toRightOf="@+id/eatDay"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/selectTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/selectDay"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="51dp"
         android:text="@string/eat_time" />
 
     <EditText
-        android:id="@+id/enterTime"
+        android:id="@+id/timeStamp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/selectTime"
-        android:layout_alignBottom="@+id/selectTime"
-        android:layout_alignStart="@+id/enterTotalFat"
-        android:hint="Select Time"
-        android:inputType="time" />
+        android:layout_alignBaseline="@+id/eatTime"
+        android:layout_alignBottom="@+id/eatTime"
+        android:layout_toEndOf="@+id/eatTime"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/calories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/selectTime"
+        android:layout_below="@+id/eatTime"
         android:layout_marginTop="53dp"
         android:text="@string/calories" />
 
@@ -78,7 +59,7 @@
         android:layout_alignBaseline="@+id/calories"
         android:layout_alignBottom="@+id/calories"
         android:layout_toEndOf="@+id/calories"
-        android:hint="Enter Calories"
+        android:hint="@string/hint_calories"
         android:inputType="number" />
 
     <TextView
@@ -97,7 +78,7 @@
         android:layout_alignBaseline="@+id/totalFat"
         android:layout_alignBottom="@+id/totalFat"
         android:layout_toRightOf="@id/totalFat"
-        android:hint="Enter Total Fat"
+        android:hint="@string/hint_total_fat"
         android:inputType="number" />
 
     <TextView
@@ -116,7 +97,7 @@
         android:layout_alignBaseline="@+id/totalCarbohydrate"
         android:layout_alignBottom="@+id/totalCarbohydrate"
         android:layout_toEndOf="@+id/totalCarbohydrate"
-        android:hint="Enter Total Carbohydrate"
+        android:hint="@string/hint_total_carbohydrate"
         android:inputType="number" />
 
     <Button
@@ -142,5 +123,18 @@
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@id/deleteButton"
         android:text="@string/cancel"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cancelButton"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="22dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@android:color/background_light"
+        app:srcCompat="@drawable/info" />
 
 </RelativeLayout>

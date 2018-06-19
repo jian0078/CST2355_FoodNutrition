@@ -1,40 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:id="@+id/foodListLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
     tools:context=".FoodList">
 
-    <RelativeLayout
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/foodToolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-        <ListView
-            android:id="@+id/foodListView"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_above="@id/addFood">
-        </ListView>
+    <ListView
+        android:id="@+id/foodListView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/foodToolbar"
+        android:layout_above="@id/addFoodButton">
+    </ListView>
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/foodListView"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="48dp"
-            android:visibility="visible" />
+    <ProgressBar
+        android:id="@+id/foodProgressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addFoodButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:visibility="visible" />
 
-        <Button
-            android:id="@+id/addFood"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:text="@string/add_food"/>
+    <Button
+        android:id="@+id/addFoodButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/calculateAverageCal"
+        android:text="@string/add_food" />
 
-    </RelativeLayout>
+    <Button
+        android:id="@+id/calculateAverageCal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/calAvg" />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/calculateTotalCal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/calculateAverageCal"
+        android:text="@string/calTotal" />
+
+</RelativeLayout>

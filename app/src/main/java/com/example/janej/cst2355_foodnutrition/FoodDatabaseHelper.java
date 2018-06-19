@@ -10,9 +10,8 @@ public class FoodDatabaseHelper extends SQLiteOpenHelper {
     public static final String tableName = "FoodTable";
     public final static String Key_ID = "_id";
     public final static String Key_FOOD = "Food";
-    public final static String Key_Day = "Day";
-    public final static String Key_Hour = "Hour";
-    public final static String Key_Minute = "Minute";
+    public final static String Key_Time = "Time";
+
     public final static String Key_Calories = "Calories";
     public final static String Key_Fat = "TotalFat";
     public final static String Key_Carbohydrate = "TotalCarbohydrate";
@@ -26,8 +25,7 @@ public class FoodDatabaseHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE " + tableName +
                 " ( _id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                "Food text, Day text, Hour text, Minute text, Calories text, " +
-                "TotalFat text, TotalCarbohydrate text);");
+                "Food text, Time text, Calories text, TotalFat text, TotalCarbohydrate text);");
     }
 
     @Override

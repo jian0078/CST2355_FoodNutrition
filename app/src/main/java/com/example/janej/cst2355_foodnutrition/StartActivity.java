@@ -9,9 +9,11 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 public class StartActivity extends AppCompatActivity {
     FloatingActionButton flButton;
@@ -60,22 +62,22 @@ public class StartActivity extends AppCompatActivity {
                 Intent intent2 = new Intent(StartActivity.this, FoodList.class);
                 startActivity(intent2);
                 break;
-//            case R.id.action_one:
-//                //Activity Tracking
-//                Intent intent1 = new Intent(StartActivity.this,DashBoardOfActivityTracking.class);
-//                startActivity(intent1);
-//                break;
-//
-//            case R.id.action_three:
-//                //Start Thermostat Activity
-//                Intent intent3 = new Intent(getApplicationContext(), ThermostatActivity.class);
-//                startActivity(intent3);
-//                break;
-//            case R.id.action_four:
-//                //Start Automobile Activity
-//                Intent intent4 = new Intent(getApplicationContext(), AutomobileActivity.class);
-//                startActivity(intent4);
-//                break;
+            case R.id.action_one:
+                //Activity Tracking
+                Intent intent1 = new Intent(StartActivity.this,DashBoardOfActivityTracking.class);
+                startActivity(intent1);
+                break;
+
+            case R.id.action_three:
+                //Start Thermostat Activity
+                Intent intent3 = new Intent(getApplicationContext(), ThermostatActivity.class);
+                startActivity(intent3);
+                break;
+            case R.id.action_four:
+                //Start Automobile Activity
+                Intent intent4 = new Intent(getApplicationContext(), AutomobileActivity.class);
+                startActivity(intent4);
+                break;
             case R.id.action_five:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle(R.string.alertFinalProject);

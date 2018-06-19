@@ -1,104 +1,224 @@
 <resources>
-        <string name="app_name">CST2355_FoodNutrition</string>
+    <string name="app_name">Final Project</string>
 
-        <!--&lt;!&ndash;-Automobile stuff &ndash;&gt;-->
-        <!--<string name="fuelCostButton">Add new purchase</string>-->
-        <!--<string name="fuelVolumeTV">Enter the amount of gas (L)</string>-->
-        <!--<string name="enterGasPriceS">Enter the price of gas</string>-->
+    <!---Automobile stuff -->
+    <string name="fuelCostButton">New purchase</string>
+    <string name="fuelVolumeTV">Enter the amount of gas (L):</string>
+    <string name="enterGasPriceS">Enter the price of gas ($):</string>
+    <string name="confirmPurchase">Add Purchase</string>
+    <string name="deleteGastext">Delete</string>
+    <string name="editGasButton">Save Changes</string>
+    <string name="priceHistoryButton">Purchase Analysis</string>
+    <string name="autoHeader">
+        By: Jinda Xu \n
+        版本：1.0
+    </string>
+    <string name="autoHelper">
+        Add, edit or delete gas purchases!\n\n\n
+        1. To add a new purchase, click on the "New Purchase Button".\n
+        2.An automatic timestamp is created for each new purchase. \n
+        3.You can edit your gas purchase by selecting the purchase from the menu.\n
+        4.You can delete your gas purchase by first clicking on the gas purchase you want to remove,
+        then press the "Delete" button.\n
+        5.You can obtain an overview of your gas purchases by clicking on the "Purchase Analysis" button. It
+        will tell you the average gas price you spent last month, how much gas in liters you bought last month,
+        and also how much gas you have bought each month.
+    </string>
+    <string name="toastAdd">Your Purchase has been recorded!</string>
+    <string name="toastDelete">Entry deleted</string>
+    <string name="toastEdit">Your Purchase has been Saved</string>
+    <string name="timeOfPurchase">Time of Purchase:</string>
+    <string name="gasPurchasedAt">Gas Purchased at:</string>
+    <string name="LitersOfGas">Total Gas Purchased:</string>
+    <string name="AvergaeGasLastMonth">Your Average gas price last month was :</string>
+    <string name="youBoughtTotalOf">You bought a total of :</string>
+    <string name="litersOfGasLastMonth">L of gas last month</string>
+    <string name="totalGasHeader">Total amount of gas bought in (This Year):</string>
+    <string name="January">January was:</string>
+    <string name="Febuary">Febuary was:</string>
+    <string name="March">March was:</string>
+    <string name="April">April was:</string>
+    <string name="May">May was:</string>
+    <string name="June">June was:</string>
+    <string name="July">July was:</string>
+    <string name="August">August was:</string>
+    <string name="September">September was:</string>
+    <string name="October">October was:</string>
+    <string name="November">November was:</string>
+    <string name="December">December was:</string>
+    <string name="addSnackbar">Adding new entry</string>
+    <string name="kmOfGasText">Enter the amount of gas (km):</string>
+    <string name="kmOfGasDisplay">Kilometers of Gas Purchased:</string>
+    <string name="InvalidPrice">Please enter a gas price</string>
+    <string name="InvalidVolume">Please enter a the amount of gas (Liters)</string>
+    <string name="InvalidKm">Please enter the amount of gas (km)</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-        <!---Nutrition stuff -->
-        <string name="food_item">Food: </string>
-        <string name="eat_day">Day: </string>
-        <string name="eat_time">Time: </string>
-        <string name="calories">Calories: </string>
-        <string name="total_fat">Total Fat: </string>
-        <string name="total_carbohydrate">Total Carbohydrate: </string>
-        <string name="delete_info">Delete</string>
-        <string name="save_info">Save</string>
-        <string name="save_asNew">Save As A New Record</string>
-        <string name="cancel">Cancel</string>
-        <string name="add_food">Add a Food Item</string>
-        <string name="title_activity_nutrition_details">NutritionDetails</string>
-        <string name="ok">Yes</string>
-        <string name="no">No</string>
-        <string name="dialog">Go back without Saving?</string>
+    <!---Nutrition stuff -->
+    <string name="food_item">Food: </string>
+    <string name="eat_time">Time: </string>
+    <string name="calories">Calories: </string>
+    <string name="total_fat">Total Fat: </string>
+    <string name="total_carbohydrate">Total Carbohydrate: </string>
+    <string name="view_food">Food: </string>
+    <string name="view_time">Time: </string>
+    <string name="view_calories">Calories: </string>
+    <string name="view_total_fat">Total Fat: </string>
+    <string name="view_total_carbohydrate">Total Carbohydrate: </string>
+    <string name="delete_info">Delete</string>
+    <string name="save_info">Save</string>
+    <string name="save_asNew">Save As A New Record</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_food">Add a Food Item</string>
+    <string name="calAvg">Calories(Avg)</string>
+    <string name="calTotal">Calories(Sum)</string>
+    <string name="title_activity_nutrition_details">NutritionDetails</string>
+    <string name="loading_database">Loading Database...Please Wait</string>
+    <string name="loading_complete">Loading Complete! Activity fully functional</string>
+    <string name="ok">Yes</string>
+    <string name="no">No</string>
+    <string name="delete_button_dialog">Delete this record?</string>
+    <string name="cancel_button_dialog">Go back without Saving?</string>
+    <string name="dialog_ok_button">OK</string>
+    <string name="item1_title">Average Calories Per Day</string>
+    <string name="item1_body_message">\nYour calories intake per day:</string>
+    <string name="item2_title">Total Calories in the Last Day</string>
+    <string name="item2_message_today">Today is:</string>
+    <string name="item2_yesterday">\n\nCalories intake from yesterday(</string>
+    <string name="item2_message_yesterday">) was: </string>
+    <string name="help_menu_title">Help Menu</string>
+    <string name="help_menu_message">Author: Yi Jiang\n\nActivity version: Food Nutrition information tracker V1.0\n\nThings the user needs to know:\n\n
+        1. This activity supports chinese version.\n
+        2. Fragments show in yellow background.\n
+        3. Tablet mode is available(turn screen).\n
+        3. Active other activities from toolbar.\n
+        4. Listview is sorted by time(latest to earliest).\n
+        5. Click listview for more details.\n
+        6. Click Add A Food Item button to add a new info.\n
+        7. Click Calories(avg) button for Calories eaten per day.\n
+        8: Click Calories(sum) button for Calories eaten yesterday.\n
+        9. Find out more details by clicking floating action button in fragment.</string>
+    <string name="floating_button_title">User Guideline</string>
+    <string name="floating_button_body_message">To store, update or delete records:\n\n
+        1. Please fill out all empty fields.\n\n
+        2. Food Item field must and only contain letters.\n\n
+        3. Fields for Calories, Fat and Carbohydrate are numbers only.\n\nInformation will store into a database and can be used for calculation and future analysis purposes.\n\nClick Delete button to delete current existing data.\n\nCancel button allows you to go back to previous activity without saving.</string>
+    <string name="dialog">Go back without Saving?</string>
+    <string name="hint_food">Enter Food Item</string>
+    <string name="hint_calories">Enter Calories</string>
+    <string name="hint_total_fat">Enter Total Fat</string>
+    <string name="hint_total_carbohydrate">Enter Total Carbohydrate</string>
+    <string name="food_info_saved">A new food info is added</string>
+    <string name="food_info_updated">Food info has been modified</string>
+    <string name="food_info_deleted">Food info has been removed</string>
+    <string name="check_food_entered">Please enter a food item</string>
+    <string name="check_valid_food">Please enter a VALID food item</string>
+    <string name="check_valid_calories">Please enter Calories info</string>
+    <string name="check_valid_fat">Please enter fat info</string>
+    <string name="check_valid_carbohydrate">Please enter Carbohydrate info</string>
 
-        <!---Thermostat stuff -->
-        <string name="duplicateQuestion">Do you want to delete duplicate?</string>
-        <string name="title_activity_thermo_message_details">ThermoMessageDetails</string>
-        <string name="action_settings">Settings</string>
-        <string name="EntrySuccessful">Entry added to the list successfully</string>
-        <string name="SuccessfulEntry">Entry has been successfully modified</string>
-        <string name="EntryRemoved">Entry has been removed successfully</string>
-        <string name="thermoDuplicate">Duplicate entry\'s found!</string>
-        <string name="thermoYes">YES</string>
-        <string name="thermoNo">NO</string>
-        <string name="ruleAdd">Add new rule</string>
-        <string name="thermoRuleMessage">Please Enter New Thermostat Rule</string>
-        <string name="thermoRuleChange">Please change or delete Thermostat Rule</string>
-        <string name="week_day">Week day:</string>
-        <string name="time">Time:</string>
-        <string name="temperature_in_c">Temperature in C:</string>
-        <string name="save">SAVE</string>
-        <string name="delete_entry">Delete entry</string>
-        <string name="cancelThermo">CANCEL</string>
-        <string name="save_as_a_new_rule">Save as a new rule</string>
-        <string name="temperature">Temperature</string>
-        <string name="alertFinalProject">CST2335_FinalProject by:</string>
-        <string name="monday">MONDAY</string>
-        <string name="tuesday">TUESDAY</string>
-        <string name="wednesday">WEDNESDAY</string>
-        <string name="thursday">THURSDAY</string>
-        <string name="friday">FRIDAY</string>
-        <string name="saturday">SATURDAY</string>
-        <string name="sunday">SUNDAY</string>
+    <string name="alertFinalProject">CST2335_FinalProject by:</string>
+    <string name="intro">Yi Jiang - Food Nutrition Tracker Activity"</string>
+    <string name="warningDelete">WARNING!</string>
+    <string name="dialogProceed">You are about to delete the Rule. Do you want to proceed?</string>
 
-        <string name="intro">Yi Jiang - Food Nutrition Tracker"</string>
+    <!---Thermostat stuff -->
+    <string name="duplicateQuestion">Do you want to delete duplicate?</string>
+    <string name="title_activity_thermo_message_details">ThermoMessageDetails</string>
+    <string name="action_settings">Settings</string>
+    <string name="EntrySuccessful">Entry added to the list successfully</string>
+    <string name="SuccessfulEntry">Entry has been successfully modified</string>
+    <string name="EntryRemoved">Entry has been removed successfully</string>
+    <string name="thermoDuplicate">Duplicate entry\'s found!</string>
+    <string name="thermoYes">YES</string>
+    <string name="thermoNo">NO</string>
+    <string name="ruleAdd">Add new rule</string>
+    <string name="thermoRuleMessage">Please Enter New Thermostat Rule</string>
+    <string name="thermoRuleChange">Please change or delete Thermostat Rule</string>
+    <string name="week_day">Week day:</string>
+    <string name="time">Time:</string>
+    <string name="temperature_in_c">Temperature in C:</string>
+    <string name="save">SAVE</string>
+    <string name="delete_entry">Delete entry</string>
+    <string name="cancelThermo">CANCEL</string>
+    <string name="save_as_a_new_rule">Save as a new rule</string>
+    <string name="temperature">Temperature</string>
+
+    <string name="monday">MONDAY</string>
+    <string name="tuesday">TUESDAY</string>
+    <string name="wednesday">WEDNESDAY</string>
+    <string name="thursday">THURSDAY</string>
+    <string name="friday">FRIDAY</string>
+    <string name="saturday">SATURDAY</string>
+    <string name="sunday">SUNDAY</string>
+    <string name="helpThermoHeader">Thermostat Activity V2.0 by Yi Jiang</string>
+    <string name="helpThermActivity"> You can program the thermostat by \n
+        adding the new rules or deleting/updating\n
+        the old ones.\n
+        Please press \"Add new Rule\" button\n
+        to add new rule, or click on the List\n
+        to update/delete an old one.\n
+        In the next activity you can change\n
+        individual parameters by clicking on them\n
+        or by choosing different options.\n
+        After you are satisfied with your choice\n
+        please click proper button for operation\n
+        and you will return back to this screen\n
+        where you will see the changes.\n
+        If you enter a duplicate entry, you will\n
+        be asked to confirm your choice by an Alert\n
+        window.</string>
 
 
 
-        <!-- fragment_view_tracking.xml -->
-        <string name="textView_dateAndTime">Date</string>
-        <string name="textView_activityType">Activity Type</string>
-        <string name="textView_durationInMinutes">Duration</string>
-        <string name="button_orderByDate">Order by time</string>
-        <string name="button_summary">Daily summary</string>
+    <!---Activity Tracking stuff -->
+    <!-- activity_dash_board_of_tracking.xml -->
+    <string name="dashboard">Activity Tracking Dashboard</string>
+    <string name="title_activity_dash_board_of_tracking">ActivityTracking</string>
+    <string name="projectNameInActivityTracking">Final Project</string>
 
-        <!-- fragment_add_activity_tracking.xml -->
-        <string name="textView_date">Date: </string>
-        <string name="textView_datePicker">Change date?</string>
-        <string name="textView_selectOneActivity">Select a activity: </string>
-        <string name="textView_amountOfTime">Amount of time: </string>
-        <string name="textView_comment">Comment:</string>
-        <string name="button_add">Add</string>
-        <string name="button_update">Update</string>
-        <string name="button_delete">Delete</string>
-        <string name="hint_minutes">In minutes</string>
-        <string name="Running">Running</string>
-        <string name="Walking">Walking</string>
-        <string name="Biking">Biking</string>
-        <string name="Swimming">Swimming</string>
-        <string name="Skating">Skating</string>
-        <string name="deleteTrackingConfirm">Are you sure to delete this record?</string>
-        <string name="deleteTrackingConfirmYes">Yes</string>
-        <string name="deleteTrackingConfirmNo">No</string>
-        <string name="deleteTrackingConfirmYesAlert">Deleted successfully!</string>
-        <string name="deleteTrackingConfirmNoAlert">Failed to delete!</string>
-        <string name="updateTrackingSucc">Updated successfully!</string>
-        <string name="updateTrackingFail">Failed to update!</string>
-        <string name="addTrackingSucc">Added successfully!</string>
-        <string name="addTrackingFail">Failed to add!</string>
+    <!-- fragment_view_tracking.xml -->
+    <string name="textView_dateAndTime">Date</string>
+    <string name="textView_activityType">Activity Type</string>
+    <string name="textView_durationInMinutes">Duration</string>
+    <string name="button_orderByDate">Order by time</string>
+    <string name="button_summary">Daily summary</string>
 
-         fragment_calculate_activity_tracking.xml
-        <string name="textView_title">Calculation of activity (in minutes)</string>
-        <string name="textView_month">Per month: </string>
-        <string name="textView_lastmonth">Last month (</string>
+    <!-- fragment_add_activity_tracking.xml -->
+    <string name="textView_date">Date: </string>
+    <string name="textView_datePicker">Change date?</string>
+    <string name="textView_selectOneActivity">Select a activity: </string>
+    <string name="textView_amountOfTime">Amount of time: </string>
+    <string name="textView_comment">Comment:</string>
+    <string name="button_add">Add</string>
+    <string name="button_update">Update</string>
+    <string name="button_delete">Delete</string>
+    <string name="hint_minutes">In minutes</string>
+    <string name="Running">Running</string>
+    <string name="Walking">Walking</string>
+    <string name="Biking">Biking</string>
+    <string name="Swimming">Swimming</string>
+    <string name="Skating">Skating</string>
+    <string name="deleteTrackingConfirm">Are you sure to delete this record?</string>
+    <string name="deleteTrackingConfirmYes">Yes</string>
+    <string name="deleteTrackingConfirmNo">No</string>
+    <string name="deleteTrackingConfirmYesAlert">Deleted successfully!</string>
+    <string name="deleteTrackingConfirmNoAlert">Failed to delete!</string>
+    <string name="updateTrackingSucc">Updated successfully!</string>
+    <string name="updateTrackingFail">Failed to update!</string>
+    <string name="addTrackingSucc">Added successfully!</string>
+    <string name="addTrackingFail">Failed to add!</string>
 
-         activity tracking help menu dialog
-        <string name="activityTrackingHelpMenu">
+    <!-- fragment_calculate_activity_tracking.xml -->
+    <string name="textView_title">Calculation of activity (in minutes)</string>
+    <string name="textView_month">Per month: </string>
+    <string name="textView_lastmonth">Last month (</string>
+
+    <!-- activity tracking help menu dialog -->
+    <string name="activityTrackingHelpMenu">
         Author: HUAMING CAI\n\nVersion Number: 1.0.0\n\nThis is an Activity Tracking. In the bottom tool bar of this interface,
         there are four buttons to operate this activity tracking. From left to right, the first button is designed to add
         a new activity tracking. The second button is used to list all activity tracking. User can select one of them to edit or delete
@@ -106,6 +226,7 @@
         "DAILY SUMMARY" button. The third button is used to calculate minutes of activity the user does per month and last month.
         The fourth button is for help information.\n\nThe second language is Simplified Chinese.\n\nOn the top tool bar, three buttons are used to bring a user to other three activities.
     </string>
-        <string name="activityTrackingHelpMenuClose">Close</string>>
+    <string name="activityTrackingHelpMenuClose">Close</string>
+    <string name="ThermoInfo">Info</string>>
 
 </resources>

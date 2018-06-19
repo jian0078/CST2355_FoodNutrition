@@ -1,5 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">最终项目</string>
+    <!---Automobile stuff -->
+    <string name="fuelCostButton">新购买</string>
+    <string name="fuelVolumeTV">输入气体量 (L):</string>
+    <string name="enterGasPriceS">输入天然气的价格 ($):</string>
+    <string name="confirmPurchase">添加购买</string>
+    <string name="deleteGastext">删除</string>
+    <string name="editGasButton">保存更改</string>
+    <string name="priceHistoryButton">购买分析</string>
+    <string name="autoHeader">通过： Jinda Xu</string>
+    <string name="autoHelper">
+        添加，编辑或删除天然气采购！\n\n\n
+        1.要添加新购买，请点击“新购买按钮”。\n
+        2.为每个新购买创建一个自动时间戳。 \n
+        3.您可以通过从菜单中选择购买来编辑您的购买天气。\n
+        4.您可以通过首先点击您想要移除的天然气购买来删除您的天然气购买，
+        然后按下“删除”按钮。\n
+        5.您可以通过点击“购买分析”按钮来获得您购买天然气的概况。它
+        会告诉你上个月你花的平均气价，你上个月买了多少气，
+        还有你每个月买了多少气</string>
+    <string name="toastAdd">您的购买已记录！</string>
+    <string name="toastDelete">条目已删除</string>
+    <string name="toastEdit">您的购买已保存</string>
+    <string name="timeOfPurchase">购买时间：</string>
+    <string name="gasPurchasedAt">天然气购买</string>
+    <string name="LitersOfGas">购买天然气总量：</string>
+    <string name="AvergaeGasLastMonth">你上个月的平均气价是：</string>
+    <string name="youBoughtTotalOf">你总共购买了：</string>
+    <string name="litersOfGasLastMonth">L上个月的天然气</string>
+    <string name="totalGasHeader">天然气购买总量（今年）：</string>
+    <string name="January">一月份是：</string>
+    <string name="Febuary">二月份是：</string>
+    <string name="March">三月份是:</string>
+    <string name="April">四份是:</string>
+    <string name="May">五份是:</string>
+    <string name="June">六份是:</string>
+    <string name="July">七份是:</string>
+    <string name="August">八份是:</string>
+    <string name="September">九份是:</string>
+    <string name="October">十份是:</string>
+    <string name="November">十一份是:</string>
+    <string name="December">十二 份是:</string>
+    <string name="addSnackbar">添加新条目</string>
+    <string name="kmOfGasText">输入气体量（公里）：</string>
+    <string name="kmOfGasDisplay">购买天然气的公里数：</string>
+    <string name="InvalidPrice">请输入天然气价格</string>
+    <string name="InvalidVolume">请输入燃气量（升）</string>
+    <string name="InvalidKm">请输入燃气量（公里）</string>
+
     <!-- activity_dash_board_of_tracking.xml -->
     <string name="title_activity_dash_board_of_tracking">减肥神器</string>
     <string name="projectNameInActivityTracking">四人帮集团</string>
@@ -44,7 +93,7 @@
 
     <!-- activity tracking help menu dialog -->
     <string name="activityTrackingHelpMenu">
-        作者：蔡华明\n\n版本号：1.0.0\n\n本界面是一个运动健身神器。在底部工具栏，有四个按钮操作该神器。从左到右，
+        作者：蒋逸\n\n版本号：1.0.0\n\n本界面是一个运动健身神器。在底部工具栏，有四个按钮操作该神器。从左到右，
         第一个按钮可以添加一条健身记录。第二个按钮用来列出所有健身记录。用户可以选择其中一条进行编辑或删除，
         也可以通过按日期排序按钮对记录按日期进行排序，以及通过日汇总按钮对每日的健身活动进行汇总。
         第三个按钮用来计算用户上月的健身时间，以及平均每个月健身时间。第四个按钮用来显示本条帮助信息。\n\n顶部工具栏的三个按钮，

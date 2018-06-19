@@ -5,19 +5,17 @@ import android.app.Activity;
 
 public class FoodInformation extends Activity {
 
-    public String food,day,hour,minute,calories,totalFat,totalCarbohydrate;
+    public String food,time,calories,totalFat,totalCarbohydrate;
 
     public FoodInformation(){}
 
-    public FoodInformation(String a,String b,String c,String d,String e,String f,String g){
+    public FoodInformation(String a,String b,String c,String d,String e){
 
         this.food = a;
-        this.day = b;
-        this.hour = c;
-        this.minute = d;
-        this.calories = e;
-        this.totalFat = f;
-        this.totalCarbohydrate = g;
+        this.time = b;
+        this.calories = c;
+        this.totalFat = d;
+        this.totalCarbohydrate = e;
 
     }
 }
